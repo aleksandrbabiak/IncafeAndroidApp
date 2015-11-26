@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InCafe</string>
+    <string name="app_id">718394798295101</string>
+    <string name="order">ЗАКАЗАТЬ ЗА</string>
+    <string name="grn">ГРН</string>
+    <string name="yor_order">ВАШ ЗАКАЗ</string>
+    <string name="make_order">ЗАКАЗАТЬ</string>
+    <string name="cancel_order">ОТМЕНИТЬ</string>
+    <string name="all_price">Итого</string>
+</resources>
+

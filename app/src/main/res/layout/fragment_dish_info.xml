@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="0.8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_name_dish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:id="@+id/dish_name_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/adapter_dish_menu_dish_name"
+                        android:textColor="#FF8A00"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/info_for_dish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#FF8A00"
+                        android:src="@drawable/ic_more_horiz_black_24dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/dish_photo_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/adapter_dish_menu_height_card_view"
+                    android:layout_below="@id/dish_name_menu"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <Button
+                android:id="@+id/dish_price_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#61C461"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dish_price_menu"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="Показать все основные блюда"
+                android:textColor="#61C461" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dish_count_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#FF8A00"
+        android:textSize="30sp"
+        />
+
+
+</FrameLayout>

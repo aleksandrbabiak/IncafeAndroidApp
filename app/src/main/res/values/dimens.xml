@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adapter_dish_menu_dish_name">15dp</dimen>
+    <dimen name="adapter_dish_menu_height_card_view">250dp</dimen>
+    <dimen name="activity_facebook_bottom_indicator">110dp</dimen>
+</resources>

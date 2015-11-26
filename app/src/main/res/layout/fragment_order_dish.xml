@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/yor_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yor_order"
+        android:textColor="#F8C29D" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@id/yor_order"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/conteiner_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_recycler_view"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/make_order_dish">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/background_splesh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_price" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/price_calculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#61C461" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/cancel_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FBB45D"
+        android:text="@string/cancel_order"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/make_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel_order_dish"
+        android:layout_marginBottom="5dp"
+        android:background="#61C461"
+        android:text="@string/make_order"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
